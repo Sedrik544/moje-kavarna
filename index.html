@@ -3,53 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kavárna Retro | Nejlepší káva ve městě</title>
+    <title>Kavárna Retro | Úvod</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="container navbar__container">
-            <div class="navbar__logo">Kavárna<span>Retro</span></div>
+            <a href="index.html" class="navbar__logo">Kavárna<span>Retro</span></a>
             <ul class="navbar__menu">
-                <li><a href="#home">Domů</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Kde nás najdete</a></li>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="kontakt.html">Kde nás najdete</a></li>
             </ul>
         </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero__overlay">
-            <h1 class="hero__title">Vůně čerstvě pražené kávy</h1>
-            <p class="hero__tagline">Zastavte se na chvíli k nám na naši výbornou kávu.</p>
-            <a href="#menu" class="btn-primary">Prohlédnout menu</a>
-        </div>
+    <header class="hero-slider">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
     </header>
 
-    <section id="menu" class="menu container">
-        <h2 class="section-title">Naše Nabídka</h2>
-        <div class="menu__grid">
-            <div class="menu-item">
-                <div class="menu-item__info">
-                    <h3 class="menu-item__name">Espresso</h3>
-                    <span class="menu-item__price">45 Kč</span>
+    <main>
+        <section class="weekly-offer container">
+            <h2 class="section-title">Speciál tohoto týdne</h2>
+            <div class="offer-box">
+                <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?q=80&w=600&auto=format&fit=crop" alt="Pistáciový dort">
+                <div class="offer-text">
+                    <h3>Pistáciový dortík s malinami</h3>
+                    <p>Přijďte ochutnat naši novinku! Domácí korpus, jemný krém z pravých italských pistácií a čerstvé maliny. Ideální kombinace k našemu krémovému Cappuccinu.</p>
+                    <span class="price">125 Kč</span>
                 </div>
-                <p class="menu-item__desc">Silná a výrazná chuť 100% Arabiky.</p>
             </div>
-            <div class="menu-item">
-                <div class="menu-item__info">
-                    <h3 class="menu-item__name">Cappuccino</h3>
-                    <span class="menu-item__price">65 Kč</span>
-                </div>
-                <p class="menu-item__desc">Jemná káva s bohatou mléčnou pěnou.</p>
-            </div>
-            </div>
-    </section>
+        </section>
+    </main>
 
-    <footer id="contact" class="footer">
+    <footer class="footer">
         <div class="container">
+            <h3 style="color: var(--gold); margin-bottom: 20px;">Těšíme se na vás</h3>
             <p>Otevřeno denně: 8:00 - 20:00</p>
             <p>Ulice Kávová 123, Praha</p>
         </div>
